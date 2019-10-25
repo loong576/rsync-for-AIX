@@ -1,0 +1,23 @@
+uid=root
+gid=system
+#max connections=4
+use chroot=true
+log file=/var/log/rsyncd.log
+pid file=/var/run/rsyncd.pid
+motd file = /etc/rsync/rsyncd.motd
+#lock file=/var/run/rsyncd.lock
+#auth users=root
+secrets file=/etc/rsync/rsyncd.pwd
+transfer logging = true
+#port = 873
+#limit access to private LANs
+hosts allow=172.27.34.238
+#hosts deny=*
+[rsync]
+path=/home/rsync
+comment = home rsync 
+#ignore errors
+read only = yes
+list = yes 
+auth users = root 
+secrets file=/etc/rsync/rsyncd.pwd
