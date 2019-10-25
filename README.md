@@ -8,9 +8,11 @@
 
 ### 1.下载软件
 
-**Openssl下载：**https://www14.software.ibm.com/webapp/iwm/web/reg/download.do?source=aixbp&S_PKG=openssl&lang=en_US
+**Openssl下载:**
+https://www14.software.ibm.com/webapp/iwm/web/reg/download.do?source=aixbp&S_PKG=openssl&lang=en_US
 
-**Openssh下载：**http://sourceforge.net/projects/openssh-aix 
+**Openssh下载:**
+http://sourceforge.net/projects/openssh-aix 
 
 **下载得到软件为:** openssl-0.9.8.1302.tar.Z 和openssh_5.4p1.tar.z
 
@@ -129,7 +131,8 @@ rsyncd.motd是定义rysnc 服务器信息的，也就是用户登录信息。比
 
 ### 4.启动rsync服务
 
-**服务器端：**启动rsync进程
+**服务器端:**
+启动rsync进程
 
 ```bash
 /usr/bin/rsync --daemon --config=/etc/rsync/rsyncd.conf
